@@ -26,6 +26,7 @@
   * { box-sizing: border-box; }
   body { margin: 0; font-family: 'Inter', system-ui, sans-serif; background: #F7F5F1; color: #0D1B2A; -webkit-font-smoothing: antialiased; }
   a { text-decoration: none; }
+  p { margin: 0 0 22px; }
   @media (max-width: 900px) {
     .grid-2 { grid-template-columns: 1fr !important; gap: 32px !important; }
     .grid-3 { grid-template-columns: 1fr !important; }
@@ -57,145 +58,168 @@
       </svg>
       <div style="font-family:'Manrope',sans-serif;font-weight:800;font-size:21px;color:#fff;letter-spacing:-0.02em;">Redação Certa</div>
     </div>
-    <div style="display:flex;align-items:center;gap:24px;">
-      <div class="nav-text-links" style="display:flex;align-items:center;gap:36px;">
-        <a href="#como-funciona" style="color:#AEB9C4;font-size:14.5px;font-weight:500;">Como funciona</a>
-        <a href="#depoimentos" style="color:#AEB9C4;font-size:14.5px;font-weight:500;">Resultados</a>
-        <a href="#preco" style="color:#AEB9C4;font-size:14.5px;font-weight:500;">Preço</a>
-        <a href="#duvidas" style="color:#AEB9C4;font-size:14.5px;font-weight:500;">Dúvidas</a>
-      </div>
-      <a href="#preco" style="background:#F46A00;color:#fff;padding:11px 18px;border-radius:8px;font-weight:700;font-size:14px;white-space:nowrap;">Quero garantir</a>
+    <div class="nav-text-links" style="display:flex;align-items:center;gap:32px;">
+      <a href="#metodo" style="color:#AEB9C4;font-size:14.5px;font-weight:500;">O método</a>
+      <a href="#preco" style="color:#AEB9C4;font-size:14.5px;font-weight:500;">Preço</a>
+      <a href="#duvidas" style="color:#AEB9C4;font-size:14.5px;font-weight:500;">Dúvidas</a>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="grid-2" style="background:radial-gradient(120% 140% at 15% 0%,#152A40 0%,#0D1B2A 55%,#0A1420 100%);padding:96px 48px 112px;display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;max-width:1280px;margin:0 auto;">
-    <div>
-      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(244,106,0,0.12);border:1px solid rgba(244,106,0,0.4);color:#F46A00;font-size:13px;font-weight:700;padding:7px 16px;border-radius:999px;margin-bottom:28px;letter-spacing:0.01em;">FOCO TOTAL EM REDAÇÃO + HUMANAS</div>
-      <h1 style="font-family:'Manrope',sans-serif;font-size:clamp(34px,4.5vw,54px);line-height:1.1;font-weight:800;color:#fff;margin:0 0 24px;letter-spacing:-0.025em;">Sua redação corrigida em segundos, não em semanas de espera.</h1>
-      <p style="font-size:19px;line-height:1.65;color:#AEB9C4;margin:0 0 40px;max-width:500px;font-weight:400;">Envie o texto na plataforma e nossa IA aponta, competência por competência, exatamente onde você perde pontos e o que corrigir. Some isso ao conteúdo de Humanas e você chega mais perto da vaga.</p>
-      <div style="display:flex;align-items:center;gap:22px;flex-wrap:wrap;">
-        <a href="#preco" style="background:#F46A00;color:#fff;padding:18px 34px;border-radius:10px;font-weight:700;font-size:17px;display:inline-block;box-shadow:0 8px 24px rgba(244,106,0,0.35);">Quero minha redação nota 1000</a>
-        <span style="color:#7C8A98;font-size:14px;">Pagamento único · Acesso imediato</span>
-      </div>
-    </div>
-    <img src="hero-mockup.png" alt="Print do corretor de redação por IA" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px;box-shadow:0 24px 64px rgba(0,0,0,0.35);background:#152A40;">
-  </section>
-
-  <!-- FEATURES -->
-  <section id="como-funciona" style="padding:100px 48px;max-width:1280px;margin:0 auto;">
-    <div style="text-align:center;max-width:640px;margin:0 auto 56px;">
-      <h2 style="font-family:'Manrope',sans-serif;font-size:36px;font-weight:800;margin:0 0 16px;letter-spacing:-0.02em;">Redação corrigida em segundos. Humanas sem pontos cegos.</h2>
-      <p style="font-size:17px;color:#4A5568;line-height:1.6;">Pare de estudar no escuro. Descubra exatamente onde você perde pontos e o que priorizar.</p>
-    </div>
-    <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px;">
-      <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 2px rgba(13,27,42,0.04),0 12px 32px rgba(13,27,42,0.08);border:1px solid rgba(13,27,42,0.05);">
-        <img src="feat-correcao.png" alt="Correção de redação por IA" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEAE1;">
-        <div style="padding:24px;">
-          <h3 style="font-family:'Manrope',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;">Correção de Redação por IA</h3>
-          <p style="font-size:15px;color:#4A5568;line-height:1.6;margin:0;">Envie sua redação e receba, em segundos, os erros apontados e sugestões por competência.</p>
-        </div>
-      </div>
-      <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 2px rgba(13,27,42,0.04),0 12px 32px rgba(13,27,42,0.08);border:1px solid rgba(13,27,42,0.05);">
-        <img src="feat-repertorio.png" alt="Banco de repertórios" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEAE1;">
-        <div style="padding:24px;">
-          <h3 style="font-family:'Manrope',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;">Banco de Repertórios</h3>
-          <p style="font-size:15px;color:#4A5568;line-height:1.6;margin:0;">Centenas de argumentos, citações e dados prontos, organizados por tema.</p>
-        </div>
-      </div>
-      <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 2px rgba(13,27,42,0.04),0 12px 32px rgba(13,27,42,0.08);border:1px solid rgba(13,27,42,0.05);">
-        <img src="feat-modelos.png" alt="Modelos de redação nota 1000" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEAE1;">
-        <div style="padding:24px;">
-          <h3 style="font-family:'Manrope',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;">Modelos Nota 1000</h3>
-          <p style="font-size:15px;color:#4A5568;line-height:1.6;margin:0;">Dezenas de redações comentadas para você copiar a estrutura que aprova.</p>
-        </div>
-      </div>
-      <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 2px rgba(13,27,42,0.04),0 12px 32px rgba(13,27,42,0.08);border:1px solid rgba(13,27,42,0.05);">
-        <img src="feat-humanas.png" alt="Questões de Humanas" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;background:#EFEAE1;">
-        <div style="padding:24px;">
-          <h3 style="font-family:'Manrope',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;">Questões de Humanas</h3>
-          <p style="font-size:15px;color:#4A5568;line-height:1.6;margin:0;">Banco de questões de História, Geografia, Filosofia e Sociologia com gabarito comentado.</p>
-        </div>
-      </div>
-      <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 2px rgba(13,27,42,0.04),0 12px 32px rgba(13,27,42,0.08);border:1px solid rgba(13,27,42,0.05);">
-        <img src="feat-raiox.png" alt="Raio-x dos temas que mais caem" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEAE1;">
-        <div style="padding:24px;">
-          <h3 style="font-family:'Manrope',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;">Temas Que Mais Caem</h3>
-          <p style="font-size:15px;color:#4A5568;line-height:1.6;margin:0;">Raio-x dos temas de redação e assuntos de Humanas mais cobrados nos últimos 10 anos.</p>
-        </div>
-      </div>
-      <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 2px rgba(13,27,42,0.04),0 12px 32px rgba(13,27,42,0.08);border:1px solid rgba(13,27,42,0.05);">
-        <img src="feat-cronograma.png" alt="Cronograma de estudos" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEAE1;">
-        <div style="padding:24px;">
-          <h3 style="font-family:'Manrope',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;">Cronograma de Estudos</h3>
-          <p style="font-size:15px;color:#4A5568;line-height:1.6;margin:0;">Plano guiado para organizar sua rotina sem perder tempo com o que não cai.</p>
-        </div>
-      </div>
+  <!-- CAPÍTULO 1 — ABERTURA -->
+  <section style="background:radial-gradient(120% 140% at 15% 0%,#152A40 0%,#0D1B2A 55%,#0A1420 100%);padding:clamp(72px,12vw,128px) 48px;">
+    <div style="max-width:640px;margin:0 auto;">
+      <p style="font-size:clamp(19px,2.4vw,22px);line-height:1.65;color:#fff;font-family:'Manrope',sans-serif;font-weight:600;margin:0 0 24px;">Antes de te mostrar qualquer coisa sobre a Redação Certa, eu queria te explicar por que ela existe.</p>
+      <p style="font-size:17px;line-height:1.8;color:#BFC9D4;">Não é uma plataforma feita pra vender curso. É uma resposta a um problema que eu via se repetir, ano após ano, em quem se prepara pro ENEM.</p>
+      <p style="font-size:17px;line-height:1.8;color:#BFC9D4;">Você provavelmente já sabe estudar. Já leu redação boa, já assistiu aula, já decorou regra. Na maioria das vezes, o problema não é esse.</p>
+      <p style="font-size:17px;line-height:1.8;color:#BFC9D4;margin:0;">Deixa eu te mostrar o que eu acho que está acontecendo de verdade.</p>
     </div>
   </section>
 
-  <!-- MECHANISM 4 STEPS -->
-  <section style="background:#EFEAE1;padding:100px 48px;">
-    <div style="max-width:1280px;margin:0 auto;">
-      <div style="text-align:center;max-width:640px;margin:0 auto 56px;">
-        <h2 style="font-family:'Manrope',sans-serif;font-size:36px;font-weight:800;margin:0 0 16px;letter-spacing:-0.02em;">Veja como sua redação é corrigida em segundos</h2>
-        <p style="font-size:17px;color:#4A5568;line-height:1.6;">Você escreve, a IA lê o texto inteiro e devolve a nota e os erros das 5 competências do ENEM, sem espera, sem fila.</p>
-      </div>
-      <div class="grid-4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
-        <div style="text-align:center;">
-          <div style="width:56px;height:56px;border-radius:50%;background:#0D1B2A;color:#F46A00;font-family:'Manrope',sans-serif;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">1</div>
-          <h3 style="font-size:17px;font-weight:700;margin:0 0 8px;">Escolha o tema</h3>
-          <p style="font-size:14px;color:#4A5568;line-height:1.5;margin:0;">Selecione entre temas oficiais ou inéditos.</p>
-        </div>
-        <div style="text-align:center;">
-          <div style="width:56px;height:56px;border-radius:50%;background:#0D1B2A;color:#F46A00;font-family:'Manrope',sans-serif;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">2</div>
-          <h3 style="font-size:17px;font-weight:700;margin:0 0 8px;">Escreva e envie</h3>
-          <p style="font-size:14px;color:#4A5568;line-height:1.5;margin:0;">Digite o texto direto na plataforma ou envie uma foto da redação escrita à mão.</p>
-        </div>
-        <div style="text-align:center;">
-          <div style="width:56px;height:56px;border-radius:50%;background:#0D1B2A;color:#F46A00;font-family:'Manrope',sans-serif;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">3</div>
-          <h3 style="font-size:17px;font-weight:700;margin:0 0 8px;">A IA lê e corrige</h3>
-          <p style="font-size:14px;color:#4A5568;line-height:1.5;margin:0;">Em segundos, ela analisa as 5 competências do ENEM e mostra a nota e cada erro encontrado.</p>
-        </div>
-        <div style="text-align:center;">
-          <div style="width:56px;height:56px;border-radius:50%;background:#0D1B2A;color:#F46A00;font-family:'Manrope',sans-serif;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">4</div>
-          <h3 style="font-size:17px;font-weight:700;margin:0 0 8px;">Aplique e reescreva</h3>
-          <p style="font-size:14px;color:#4A5568;line-height:1.5;margin:0;">Corrija os pontos fracos com um clique e envie de novo.</p>
-        </div>
-      </div>
-      <div style="text-align:center;margin-top:48px;">
-        <a href="#preco" style="background:#F46A00;color:#fff;padding:16px 30px;border-radius:10px;font-weight:700;font-size:16px;display:inline-block;">Quero começar agora</a>
-      </div>
+  <!-- CAPÍTULO 2 — O PROBLEMA NÃO É INTELIGÊNCIA -->
+  <section style="padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:640px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 24px;letter-spacing:-0.015em;">O problema do estudante é falta de inteligência?</h2>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">Não é. A resposta também não é falta de dedicação — a maioria dos estudantes que eu conheço estuda bastante, alguns até demais.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">O problema é outro. Durante anos, você recebeu uma quantidade enorme de conteúdo. Ensino fundamental, ensino médio, cursinho, apostila, resumo, aula extra. Ninguém te ensinou a hierarquizar isso — só a acumular.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">E aí você chega na reta final acreditando numa coisa que parecia óbvia até então: que precisa estudar tudo.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;margin:0;">É aqui que o problema nasce. E não tem nada a ver com escola, professor ou cursinho — cada um faz o trabalho dele. Só que a lógica do ensino médio não é a mesma lógica da reta final do ENEM. Essas duas coisas exigem estratégias diferentes, e quase ninguém te avisa disso.</p>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section id="depoimentos" style="padding:100px 48px;max-width:1280px;margin:0 auto;">
-    <div style="text-align:center;max-width:560px;margin:0 auto 48px;">
-      <h2 style="font-family:'Manrope',sans-serif;font-size:36px;font-weight:800;margin:0 0 16px;letter-spacing:-0.02em;">Você pode ser o próximo</h2>
-      <p style="font-size:17px;color:#4A5568;line-height:1.6;">Alunos que destravaram a redação nota 1000 e a prova de Humanas com o material.</p>
-    </div>
-    <div class="grid-4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
-      <img src="dep-2.webp" alt="Depoimento de aluno" style="width:100%;border-radius:14px;box-shadow:0 1px 2px rgba(13,27,42,0.04),0 12px 32px rgba(13,27,42,0.06);">
-      <img src="dep-3.png" alt="Depoimento de aluno" style="width:100%;border-radius:14px;box-shadow:0 1px 2px rgba(13,27,42,0.04),0 12px 32px rgba(13,27,42,0.06);">
-      <img src="dep-4.png" alt="Depoimento de aluno" style="width:100%;border-radius:14px;box-shadow:0 1px 2px rgba(13,27,42,0.04),0 12px 32px rgba(13,27,42,0.06);">
-      <img src="dep-5.png" alt="Depoimento de aluno" style="width:100%;border-radius:14px;box-shadow:0 1px 2px rgba(13,27,42,0.04),0 12px 32px rgba(13,27,42,0.06);">
-      <img src="dep-6.png" alt="Depoimento de aluno" style="width:100%;border-radius:14px;box-shadow:0 1px 2px rgba(13,27,42,0.04),0 12px 32px rgba(13,27,42,0.06);">
-      <img src="dep-7.png" alt="Depoimento de aluno" style="width:100%;border-radius:14px;box-shadow:0 1px 2px rgba(13,27,42,0.04),0 12px 32px rgba(13,27,42,0.06);">
-      <img src="dep-8.png" alt="Depoimento de aluno" style="width:100%;border-radius:14px;box-shadow:0 1px 2px rgba(13,27,42,0.04),0 12px 32px rgba(13,27,42,0.06);">
+  <!-- CAPÍTULO 3 — A TESE -->
+  <section style="background:#0D1B2A;padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:640px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 24px;letter-spacing:-0.015em;color:#fff;">Então qual é o problema real?</h2>
+      <p style="font-size:17px;line-height:1.8;color:#BFC9D4;">A maioria dos estudantes trata conteúdos completamente diferentes como se tivessem exatamente a mesma importância.</p>
+      <p style="font-size:17px;line-height:1.8;color:#BFC9D4;">Isso é um erro silencioso — daqueles que ninguém percebe cometendo, porque parece disciplina. Só que existem conteúdos extremamente recorrentes e conteúdos que aparecem raramente. Isso não significa que o raro nunca vai cair. Significa só que ele não deveria ocupar o mesmo espaço, na sua rotina, que o recorrente ocupa.</p>
+      <p style="font-size:17px;line-height:1.8;color:#BFC9D4;">É nesse ponto que nasce o motivo de existir da Redação Certa.</p>
+      <p style="font-size:17px;line-height:1.8;color:#BFC9D4;margin:0;">A plataforma não existe pra colocar mais conteúdo em cima de você. Existe pra <strong style="color:#F46A00;">organizar</strong> o que já existe — pra que cada hora do seu estudo pese o tanto que deveria pesar.</p>
     </div>
   </section>
 
-  <!-- PRICING -->
-  <section id="preco" style="background:#0D1B2A;padding:100px 48px;">
+  <!-- CAPÍTULO 4 — COMO ISSO VIROU PRODUTO -->
+  <section id="metodo" style="padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:700px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 24px;letter-spacing:-0.015em;">Como essa organização virou um produto</h2>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">Uma ideia sozinha não ajuda ninguém a estudar melhor. Ela precisa virar rotina — algo que você abre todo dia e sabe exatamente o que fazer.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;margin:0 0 32px;">Foi pra isso que a Redação Certa foi construída: pra transformar esse método de organização em uma plataforma prática, que você usa pelo celular ou pelo computador.</p>
+      <img src="hero-mockup.png" alt="Interface da Redação Certa em notebook e celular" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;box-shadow:0 20px 48px rgba(13,27,42,0.18);">
+    </div>
+  </section>
+
+  <!-- CAPÍTULO 5 — MENOS DECISÕES -->
+  <section style="background:#F3F7F4;padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:640px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 24px;letter-spacing:-0.015em;">O objetivo nunca foi criar uma biblioteca enorme</h2>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">O objetivo foi criar um caminho.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">Toda vez que você abre o material e precisa decidir "por onde eu começo hoje?", você está gastando energia decidindo — não estudando. E decisão cansa tanto quanto estudo, só que sem produzir nenhum resultado.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;margin:0;">A Redação Certa foi pensada pra reduzir esse número de decisões ao mínimo. Quando você já sabe o que fazer naquele dia, toda a sua energia vai pro estudo em si — não pra ficar escolhendo entre vinte abas abertas.</p>
+    </div>
+  </section>
+
+  <!-- CAPÍTULO 6 — CRONOGRAMA -->
+  <section style="padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:700px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 24px;letter-spacing:-0.015em;">Na prática, isso é um cronograma</h2>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">Mas não pensa nele como uma agenda que te cobra prazo. Pensa como uma ferramenta que existe pra reduzir três coisas bem específicas: ansiedade, indecisão e tempo desperdiçado.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;margin:0 0 28px;">Ele não controla você. Ele só garante que, quando você sentar pra estudar, o "o que eu faço agora" já esteja resolvido.</p>
+      <img src="feat-cronograma.png" alt="Cronograma de estudos" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;box-shadow:0 16px 40px rgba(13,27,42,0.14);">
+    </div>
+  </section>
+
+  <!-- CAPÍTULO 7 — RAIO-X -->
+  <section style="background:#F3F7F4;padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:700px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 24px;letter-spacing:-0.015em;">Mas como saber o que realmente merece prioridade?</h2>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">Essa organização não veio do nada. Ela nasceu de um levantamento feito ao longo de anos, olhando recorrência, padrão de cobrança e peso real de cada assunto nas provas.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;margin:0 0 28px;">Isso não é uma promessa de previsão — a gente não adivinha tema de prova, e desconfia de quem diz que adivinha. É só uma leitura honesta de padrão, que vira prioridade dentro do seu cronograma. Chamamos isso de Raio-X.</p>
+      <img src="feat-raiox.png" alt="Raio-x dos temas que mais caem" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;box-shadow:0 16px 40px rgba(13,27,42,0.14);">
+    </div>
+  </section>
+
+  <!-- CAPÍTULO 8 — E A REDAÇÃO -->
+  <section style="padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:640px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 24px;letter-spacing:-0.015em;">E quando chega a redação?</h2>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">Antes de falar de modelo, de nota ou de repertório, tem uma ideia que precisa ficar clara.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">Redação é uma estrutura lógica. Não é uma coleção de frases bonitas.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">Ela não depende de decorar texto pronto. Não depende só de repertório, nem de usar palavra difícil.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;margin:0;">Ela depende, principalmente, de entender por que cada parte existe. Por que a introdução tem aquela função. Por que o desenvolvimento precisa de determinada lógica. Por que a proposta de intervenção tem elementos que não são opcionais. Quem entende isso escreve qualquer tema. Quem decora só escreve aquele que já viu antes.</p>
+    </div>
+  </section>
+
+  <!-- CAPÍTULO 9 — MODELOS -->
+  <section style="background:#F3F7F4;padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:700px;margin:0 auto;">
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;margin:0 0 28px;">É por isso que os modelos dentro da Redação Certa não existem pra serem decorados. Eles existem pra mostrar essa estrutura funcionando na prática — texto por texto, argumento por argumento.</p>
+      <img src="feat-modelos.png" alt="Modelos de redação nota 1000" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;box-shadow:0 16px 40px rgba(13,27,42,0.14);">
+    </div>
+  </section>
+
+  <!-- CAPÍTULO 10 — IA -->
+  <section style="padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:700px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 24px;letter-spacing:-0.015em;">Como eu descubro onde estou errando?</h2>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">Escrever muita redação não significa melhorar. Melhora quem recebe retorno específico sobre o próprio erro, entende esse erro e reescreve em cima dele.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;margin:0 0 28px;">É essa a função da correção por IA dentro da plataforma: você escreve, recebe uma análise competência por competência, entende o que precisa mudar, reescreve e compara sua evolução. A ferramenta é essa. O que muda a sua nota é o ciclo — escrever, entender, corrigir, escrever de novo.</p>
+      <img src="feat-correcao.png" alt="Correção de redação por IA" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;box-shadow:0 16px 40px rgba(13,27,42,0.14);">
+    </div>
+  </section>
+
+  <!-- CAPÍTULO 11 — REPERTÓRIO -->
+  <section style="background:#F3F7F4;padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:700px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 24px;letter-spacing:-0.015em;">Sobre repertório</h2>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">A maior parte dos estudantes usa repertório do jeito errado: decoram uma citação e tentam encaixar ela em qualquer tema, mesmo quando não faz sentido.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;margin:0 0 28px;">Por isso o banco dentro da plataforma é organizado por tema e por contexto de uso — não é uma lista solta de frases pra decorar, é uma referência pra você entender onde cada repertório realmente se aplica.</p>
+      <img src="feat-repertorio.png" alt="Banco de repertórios" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;box-shadow:0 16px 40px rgba(13,27,42,0.14);">
+    </div>
+  </section>
+
+  <!-- CAPÍTULO 12 — HUMANAS -->
+  <section style="padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:700px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 24px;letter-spacing:-0.015em;">E Humanas?</h2>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">A maioria dos estudantes trata questão de Humanas como decoreba de data e nome. Não é assim que essas provas cobram — elas cobram interpretação de contexto, mais do que memorização.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;margin:0 0 28px;">Por isso o banco de questões de Humanas vem organizado por eixo, com gabarito comentado explicando o raciocínio — não só a resposta certa.</p>
+      <img src="feat-humanas.png" alt="Questões de Humanas" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:16px;box-shadow:0 16px 40px rgba(13,27,42,0.14);max-width:420px;display:block;margin:0 auto;">
+    </div>
+  </section>
+
+  <!-- CAPÍTULO 13 — O SISTEMA -->
+  <section style="background:#0D1B2A;padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:640px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 24px;letter-spacing:-0.015em;color:#fff;">Até aqui você viu tudo isso separado</h2>
+      <p style="font-size:17px;line-height:1.8;color:#BFC9D4;">Cronograma. Raio-X. Modelos. Correção por IA. Repertório. Questões de Humanas.</p>
+      <p style="font-size:17px;line-height:1.8;color:#BFC9D4;">Sozinha, cada uma dessas partes já ajuda. Mas o que muda de fato a sua rotina é elas conversando entre si: o cronograma te diz o que estudar hoje, o Raio-X te diz por que aquilo importa, a redação e as questões colocam isso em prática, e a correção te devolve exatamente onde ajustar pra amanhã.</p>
+      <p style="font-size:17px;line-height:1.8;color:#BFC9D4;margin:0;">Isso não é uma coleção de ferramentas. É um sistema.</p>
+    </div>
+  </section>
+
+  <!-- CAPÍTULO 14 — LIMITAÇÃO HONESTA -->
+  <section style="padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:640px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 24px;letter-spacing:-0.015em;">Isso garante minha aprovação?</h2>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">Não. E qualquer plataforma séria te diria a mesma coisa.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;margin:0;">A Redação Certa organiza, explica, direciona e corrige. Mas quem escreve a redação, resolve a questão e executa o cronograma é você. A plataforma tira o peso de decidir o que fazer — não o trabalho de fazer.</p>
+    </div>
+  </section>
+
+  <!-- CAPÍTULO 15 — PARA QUEM É -->
+  <section style="background:#F3F7F4;padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:640px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 24px;letter-spacing:-0.015em;">Pra quem é, e pra quem não é</h2>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;">Faz sentido pra quem está na reta final de estudo pro ENEM ou vestibular, já sabe o básico e agora precisa de direção — não de mais conteúdo.</p>
+      <p style="font-size:17px;line-height:1.8;color:#3E4A57;margin:0;">Não faz tanto sentido pra quem está começando do zero, sem nenhum contato prévio com o conteúdo — nesse caso, o problema ainda não é organização, é base. E base a Redação Certa não substitui.</p>
+    </div>
+  </section>
+
+  <!-- CAPÍTULO 16 — PREÇO -->
+  <section id="preco" style="background:#0D1B2A;padding:clamp(72px,10vw,104px) 48px;">
     <div class="grid-2" style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;">
       <div>
-        <h2 style="font-family:'Manrope',sans-serif;font-size:38px;font-weight:800;color:#fff;margin:0 0 20px;letter-spacing:-0.02em;">Você não precisa de mais um curso. Precisa de direção.</h2>
-        <p style="font-size:17px;color:#CBD3DC;line-height:1.7;margin:0 0 24px;">Cansado de estudar sem saber se está no caminho certo? O Redação Certa mostra exatamente onde você erra na redação e o que priorizar em Humanas, em um único acesso, sem mensalidade pra lembrar de pagar.</p>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;">
-          <div style="background:rgba(255,255,255,0.06);padding:14px 18px;border-radius:10px;color:#fff;font-size:14px;">🔒 Garantia de 7 dias</div>
-          <div style="background:rgba(255,255,255,0.06);padding:14px 18px;border-radius:10px;color:#fff;font-size:14px;">📱 Acesso por celular e computador</div>
-        </div>
+        <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(28px,3.4vw,38px);font-weight:800;color:#fff;margin:0 0 20px;letter-spacing:-0.02em;">Até aqui, você já sabe o que está comprando.</h2>
+        <p style="font-size:17px;color:#CBD3DC;line-height:1.8;margin:0;">Não é uma IA. Não é um cronograma. Não são PDFs. É organização, método e direção — as ferramentas existem só pra tornar isso possível no seu dia a dia.</p>
       </div>
       <div style="background:#fff;border-radius:20px;padding:44px;box-shadow:0 24px 64px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.08);">
         <div style="color:#4A5568;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:8px;">Acesso completo</div>
@@ -220,49 +244,56 @@
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="duvidas" style="padding:100px 48px;max-width:840px;margin:0 auto;">
-    <div style="text-align:center;margin-bottom:48px;">
-      <div style="color:#F46A00;font-weight:700;font-size:14px;margin-bottom:12px;">FICOU COM ALGUMA DÚVIDA?</div>
-      <h2 style="font-family:'Manrope',sans-serif;font-size:34px;font-weight:800;margin:0;letter-spacing:-0.02em;">Perguntas frequentes</h2>
+  <!-- CAPÍTULO 17 — GARANTIA -->
+  <section style="padding:clamp(56px,8vw,84px) 48px;">
+    <div style="max-width:600px;margin:0 auto;text-align:center;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(22px,2.8vw,28px);font-weight:800;margin:0 0 20px;letter-spacing:-0.015em;">Sobre os 7 dias de garantia</h2>
+      <p style="font-size:16.5px;line-height:1.8;color:#3E4A57;margin:0;">A gente não coloca garantia porque acha que você vai desistir. Coloca porque decisão sob pressão raramente é boa decisão. Você entra, usa, confere se faz sentido pra sua rotina — e só então essa escolha vira definitiva. Se não fizer sentido, devolvemos o valor sem burocracia.</p>
     </div>
-    <div style="display:flex;flex-direction:column;gap:16px;">
-      <div style="background:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 1px 4px rgba(13,27,42,0.05);">
-        <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Isso funciona só para redação ou também para Humanas?</h3>
-        <p style="font-size:14.5px;color:#4A5568;line-height:1.6;margin:0;">Os dois. O material foi feito para quem quer nota alta na redação e também dominar História, Geografia, Filosofia e Sociologia, sem precisar de outro curso.</p>
-      </div>
-      <div style="background:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 1px 4px rgba(13,27,42,0.05);">
-        <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Como funciona a correção por IA?</h3>
-        <p style="font-size:14.5px;color:#4A5568;line-height:1.6;margin:0;">Você envia sua redação e recebe, em segundos, uma nota e comentários detalhados por competência do ENEM, com sugestões que você aplica direto no texto.</p>
-      </div>
-      <div style="background:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 1px 4px rgba(13,27,42,0.05);">
-        <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Serve para o meu vestibular?</h3>
-        <p style="font-size:14.5px;color:#4A5568;line-height:1.6;margin:0;">Sim. O conteúdo cobre a estrutura de redação usada na maioria dos vestibulares e no ENEM, além dos temas de Humanas mais recorrentes.</p>
-      </div>
-      <div style="background:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 1px 4px rgba(13,27,42,0.05);">
-        <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">É só um material ou tenho acesso a mais coisas?</h3>
-        <p style="font-size:14.5px;color:#4A5568;line-height:1.6;margin:0;">Você recebe o material completo mais o corretor de redação por IA, banco de questões e cronograma de estudos, tudo no mesmo acesso.</p>
-      </div>
-      <div style="background:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 1px 4px rgba(13,27,42,0.05);">
-        <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Tem garantia?</h3>
-        <p style="font-size:14.5px;color:#4A5568;line-height:1.6;margin:0;">Sim. Você tem 7 dias de garantia incondicional. Se não gostar, devolvemos 100% do seu dinheiro.</p>
-      </div>
-      <div style="background:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 1px 4px rgba(13,27,42,0.05);">
-        <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Preciso pagar mensalidade?</h3>
-        <p style="font-size:14.5px;color:#4A5568;line-height:1.6;margin:0;">Não. É um pagamento único. Você paga uma vez e tem acesso completo para sempre, incluindo atualizações futuras.</p>
-      </div>
-      <div style="background:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 1px 4px rgba(13,27,42,0.05);">
-        <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Consigo acessar pelo celular?</h3>
-        <p style="font-size:14.5px;color:#4A5568;line-height:1.6;margin:0;">Sim, o acesso funciona em qualquer dispositivo com internet: celular, tablet ou computador.</p>
+  </section>
+
+  <!-- CAPÍTULO 18 — FAQ -->
+  <section id="duvidas" style="background:#F3F7F4;padding:clamp(64px,10vw,104px) 48px;">
+    <div style="max-width:760px;margin:0 auto;">
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,30px);font-weight:800;margin:0 0 40px;letter-spacing:-0.015em;text-align:center;">Perguntas que fazem sentido perguntar</h2>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="background:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 1px 4px rgba(13,27,42,0.05);">
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Como vocês decidem o que entra no cronograma primeiro?</h3>
+          <p style="font-size:14.5px;color:#4A5568;line-height:1.7;margin:0;">Por recorrência real nas provas e pelo impacto que cada assunto costuma ter na nota final — não por ordem de capítulo de livro didático.</p>
+        </div>
+        <div style="background:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 1px 4px rgba(13,27,42,0.05);">
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">E se eu atrasar o cronograma?</h3>
+          <p style="font-size:14.5px;color:#4A5568;line-height:1.7;margin:0;">Nada acontece. Ele existe pra te orientar, não pra te punir. Você retoma de onde parou, sem perder o que já ficou pra trás.</p>
+        </div>
+        <div style="background:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 1px 4px rgba(13,27,42,0.05);">
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Isso substitui um cursinho?</h3>
+          <p style="font-size:14.5px;color:#4A5568;line-height:1.7;margin:0;">Depende do que você já tem de base. Se você já passou pelo conteúdo em algum momento e agora precisa organizar e treinar, sim, costuma bastar. Se ainda está construindo essa base do zero, a Redação Certa funciona melhor como complemento.</p>
+        </div>
+        <div style="background:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 1px 4px rgba(13,27,42,0.05);">
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">A correção por IA erra?</h3>
+          <p style="font-size:14.5px;color:#4A5568;line-height:1.7;margin:0;">Pode errar, como qualquer sistema de correção — humano incluso. Por isso ela explica o raciocínio por trás de cada apontamento, pra você julgar e aprender com o processo, não só aceitar uma nota.</p>
+        </div>
+        <div style="background:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 1px 4px rgba(13,27,42,0.05);">
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Preciso seguir a ordem exata do material?</h3>
+          <p style="font-size:14.5px;color:#4A5568;line-height:1.7;margin:0;">Não. A ordem sugerida é a que costuma gerar mais resultado no menor tempo, mas você pode ajustar pro seu ritmo e pro que já domina.</p>
+        </div>
+        <div style="background:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 1px 4px rgba(13,27,42,0.05);">
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Como recebo o acesso e por quanto tempo dura?</h3>
+          <p style="font-size:14.5px;color:#4A5568;line-height:1.7;margin:0;">Assim que o pagamento é confirmado, por e-mail. O acesso é vitalício, incluindo atualizações futuras do material — pagamento único, sem mensalidade.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FINAL CTA -->
-  <section style="background:#EFEAE1;padding:80px 48px;text-align:center;">
-    <h2 style="font-family:'Manrope',sans-serif;font-size:34px;font-weight:800;margin:0 0 16px;letter-spacing:-0.02em;max-width:600px;margin-left:auto;margin-right:auto;">Sua redação nota 1000 e a aprovação em Humanas começam agora.</h2>
-    <p style="font-size:16px;color:#4A5568;margin:0 0 32px;">Não espere o dia da prova para treinar. Comece hoje.</p>
-    <a href="#preco" style="background:#F46A00;color:#fff;padding:18px 34px;border-radius:10px;font-weight:700;font-size:17px;display:inline-block;">Quero minha redação nota 1000</a>
+  <!-- CAPÍTULO 19 — FECHAMENTO -->
+  <section style="background:#0D1B2A;padding:clamp(72px,12vw,120px) 48px;">
+    <div style="max-width:600px;margin:0 auto;">
+      <p style="font-size:17px;line-height:1.85;color:#BFC9D4;">Obrigado por ter lido até aqui. Sei que essa não é uma página curta, e isso foi proposital — prefiro que você entenda o que está levando do que decida rápido demais.</p>
+      <p style="font-size:17px;line-height:1.85;color:#BFC9D4;">A Redação Certa não promete milagre. Promete organizar o que hoje está espalhado, e te devolver algo que vale mais que conteúdo: direção.</p>
+      <p style="font-size:17px;line-height:1.85;color:#BFC9D4;margin:0 0 36px;">Se isso fez sentido pra você, o acesso está logo ali em cima. Se ainda ficou alguma dúvida, dá uma olhada nas perguntas mais comuns, algumas linhas acima.</p>
+      <a href="#preco" style="display:inline-block;background:#F46A00;color:#fff;padding:16px 30px;border-radius:10px;font-weight:700;font-size:16px;">Ver o acesso completo</a>
+      <p style="font-size:15px;color:#7C8A98;margin:28px 0 0;font-style:italic;">— Rodrigo</p>
+    </div>
   </section>
 
   <!-- FOOTER -->
@@ -276,13 +307,12 @@
           </svg>
           <div style="font-family:'Manrope',sans-serif;font-weight:800;font-size:19px;color:#fff;">Redação Certa</div>
         </div>
-        <p style="color:#8A96A3;font-size:14px;line-height:1.6;max-width:260px;">Material completo de redação e Humanas para ENEM e vestibulares.</p>
+        <p style="color:#8A96A3;font-size:14px;line-height:1.6;max-width:260px;margin:0;">Material completo de redação e Humanas para ENEM e vestibulares.</p>
       </div>
       <div>
         <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:14px;">Navegação</div>
         <div style="display:flex;flex-direction:column;gap:10px;">
-          <a href="#como-funciona" style="color:#8A96A3;font-size:14px;">Como funciona</a>
-          <a href="#depoimentos" style="color:#8A96A3;font-size:14px;">Resultados</a>
+          <a href="#metodo" style="color:#8A96A3;font-size:14px;">O método</a>
           <a href="#preco" style="color:#8A96A3;font-size:14px;">Preço</a>
           <a href="#duvidas" style="color:#8A96A3;font-size:14px;">Dúvidas</a>
         </div>
